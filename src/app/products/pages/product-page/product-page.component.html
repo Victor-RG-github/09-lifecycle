@@ -1,0 +1,4 @@
+<p>product-page works!</p>
+<button (click)="changeableValue = !changeableValue">{{changeableValue}}</button>
+<button (click)="increasePrice()">++</button>
+<products-price [price]="currentPrice" *ngIf="changeableValue"></products-price>
